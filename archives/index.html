@@ -214,7 +214,7 @@
                     <aside id="sidebar">
     <div class="sidebar-wrap wow fadeInRight">
         <div class="sidebar-author">
-            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="xiaoliu_a" class="lazyload">
+            <img data-src="/avatar/luogu_head.png" data-sizes="auto" alt="xiaoliu_a" class="lazyload">
             <div class="sidebar-author-name">xiaoliu_a</div>
             <div class="sidebar-description"></div>
         </div>
@@ -331,7 +331,7 @@
         <nav id="mobile-nav">
     <div class="sidebar-wrap">
         <div class="sidebar-author">
-            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="xiaoliu_a" class="lazyload">
+            <img data-src="/avatar/luogu_head.png" data-sizes="auto" alt="xiaoliu_a" class="lazyload">
             <div class="sidebar-author-name">xiaoliu_a</div>
             <div class="sidebar-description"></div>
         </div>
@@ -415,6 +415,30 @@
 
 
 
+
+    
+<script src="https://unpkg.com/valine@1.5.1/dist/Valine.min.js"></script>
+
+    <script>
+        var GUEST_INFO = ['nick', 'mail', 'link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function (item) {
+            return GUEST_INFO.indexOf(item) > -1
+        });
+        var recordIP = JSON.parse('true');
+        var highlight = JSON.parse('true');
+
+        new Valine({
+            el: '.vcomment',
+            appId: "RuN8MXki3oGW6DQWKGtL230h-gzGzoHsz",
+            appKey: "SmbGLnIP66US3sSJwSIhoTD8",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: 'zh-cn',
+            recordIP: recordIP,
+            highlight: highlight
+        });
+    </script>
 
 
 
